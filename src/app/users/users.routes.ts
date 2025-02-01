@@ -5,6 +5,7 @@ import {
   canLeaveEditPage,
 } from '../tasks/new-task/new-task.component';
 import { resolveUserTasks, TaskComponent } from '../tasks/task/task.component';
+import { TasksComponent } from '../tasks/tasks.component';
 
 export const routes: Routes = [
   {
@@ -14,7 +15,7 @@ export const routes: Routes = [
   },
   {
     path: 'tasks', // <your-domain>/users/<uid>/tasks
-    component: TaskComponent,
+    component: TasksComponent,
     // loadComponent: () =>
     //   import('../tasks/tasks.component').then((mod) => mod.TasksComponent),
     runGuardsAndResolvers: 'always',
